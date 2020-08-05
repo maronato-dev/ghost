@@ -1,0 +1,5 @@
+data/ghost.db
+logs/
+images/
+data/*
+!data/redirects.json
