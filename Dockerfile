@@ -72,3 +72,5 @@ CMD ["node", "current/index.js"]
 
 COPY ./content $GHOST_CONTENT
 COPY ./config.production.json $GHOST_INSTALL/config.production.json
+# Copy to core just to be sure
+RUN cp $GHOST_CONTENT/adapters/storage/s3.js $GHOST_INSTALL/current/core/server/adapters/storage/s3.js
