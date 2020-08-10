@@ -70,5 +70,5 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE 2368
 CMD ["node", "current/index.js"]
 
-COPY ./content /var/lib/ghost/content
-COPY ./config.production.json /var/lib/ghost/config.production.json
+COPY ./content $GHOST_CONTENT
+COPY ./config.production.json $GHOST_INSTALL/config.production.json
