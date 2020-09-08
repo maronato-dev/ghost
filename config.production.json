@@ -8,6 +8,9 @@
     "client": "sqlite3",
     "connection": {
       "filename": "/var/lib/ghost/content/data/ghost.db"
+    },
+    "pool": {
+      "min": 0
     }
   },
   "mail": {
